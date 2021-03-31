@@ -10,6 +10,7 @@ class Angle {
 		void normalno();        // функцию, которую мы вызываем в главном коде
 		void ctrlV();           // перевод сервомоторов в нулевую позицию (smoothStart()) 
 		void set_gCode(String gCode); // мы присваиваем нашему объекту gCode.
+		void set_pause(int pause);
 		
 	private:
 		

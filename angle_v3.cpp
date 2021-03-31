@@ -3,7 +3,7 @@
 
 #include <angle_v2.h>
 
-Angle::jekaCode(String gCode = "000000", int pause = 100) { // конструктор : gCode список координат; pause- задержка между поворотами в мили сек. 
+Angle::jekaCode(String gCode = "000000", int _pause = 100) { // конструктор : gCode список координат; pause- задержка между поворотами в мили сек. 
 		
 		_gCode = gCode;
 		_pause = pause;
@@ -22,6 +22,12 @@ void Angle::set_gCode(String gCode){
 	_gCode = gCode; 
 	
 } 
+
+void Angle::set_pause(int pause){
+	
+	_pause = pause; 
+	
+}
 
 void Angle::_simpleHogwarts() { // передаем ардуинке координаты с листа ( начальные и следующие )
 
